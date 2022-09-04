@@ -22,11 +22,14 @@ public class WordManager {
                         "******************\n" +
                         "=> 원하는 메뉴는? ");
         return s.nextInt();
-        };
+        }
     public void start(){
         while(true){
             int menu=selectMenu();
-            if(menu==0) break;
+            if(menu==0) {
+                System.out.println("영단어 마스터가 종료되었습니다.");
+                break;
+            }
             if(menu==4){
                 wordCRUD.addWord();
             } else if (menu==1) {
