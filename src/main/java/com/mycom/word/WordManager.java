@@ -23,23 +23,25 @@ public class WordManager {
                         "=> 원하는 메뉴는? ");
         return s.nextInt();
         }
-    public void start(){
-        while(true){
-            int menu=selectMenu();
-            if(menu==0) {
+    public void start() {
+        wordCRUD.loadFile();
+        while (true) {
+            int menu = selectMenu();
+            if (menu == 0) {
                 System.out.println("영단어 마스터가 종료되었습니다.");
                 break;
             }
-            if(menu==4){
+            if (menu == 4) {
                 wordCRUD.addItem();
-            } else if (menu==1) {
+            } else if (menu == 1) {
                 wordCRUD.listAll();
-            } else if (menu==5) {
+            } else if (menu == 5) {
                 wordCRUD.updateItem();
-            } else if (menu==6 ) {
+            } else if (menu == 6) {
                 wordCRUD.deleteItem();
+            } else if (menu == 7) {
+                wordCRUD.saveFile();
             }
         }
-
     }
 }
