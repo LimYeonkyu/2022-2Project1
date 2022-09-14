@@ -5,7 +5,6 @@
 1|apple|사과
 3|dedicate|전념하다, 헌신하다, 바치다
 2|revised|수정된
-1|collaborate|협력하다
 1|expire|만료되다
 2|initially|초기에
 1|signature|서명
